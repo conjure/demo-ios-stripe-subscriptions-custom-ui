@@ -14,6 +14,10 @@
 		1B1F5C3C27DF9005002755D3 /* Stripe in Frameworks */ = {isa = PBXBuildFile; productRef = 1B1F5C3B27DF9005002755D3 /* Stripe */; };
 		1B1F5C3E27DF9005002755D3 /* StripeApplePay in Frameworks */ = {isa = PBXBuildFile; productRef = 1B1F5C3D27DF9005002755D3 /* StripeApplePay */; };
 		1B1F5C4027DF9498002755D3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1F5C3F27DF9498002755D3 /* Constants.swift */; };
+		1B1F5C4227DFA2F8002755D3 /* CustomStyledTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1F5C4127DFA2F8002755D3 /* CustomStyledTextField.swift */; };
+		1B1F5C4427DFA59B002755D3 /* CustomStyledButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1F5C4327DFA59B002755D3 /* CustomStyledButton.swift */; };
+		1B1F5C4727DFA9EE002755D3 /* AnyFormatKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1B1F5C4627DFA9EE002755D3 /* AnyFormatKit */; };
+		1B1F5C4927DFAA0C002755D3 /* TextFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1F5C4827DFAA0C002755D3 /* TextFormatter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +27,9 @@
 		1B1F5C3027DF8EAD002755D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B1F5C3327DF8EAD002755D3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1B1F5C3F27DF9498002755D3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		1B1F5C4127DFA2F8002755D3 /* CustomStyledTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomStyledTextField.swift; sourceTree = "<group>"; };
+		1B1F5C4327DFA59B002755D3 /* CustomStyledButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomStyledButton.swift; sourceTree = "<group>"; };
+		1B1F5C4827DFAA0C002755D3 /* TextFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFormatter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +38,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B1F5C3C27DF9005002755D3 /* Stripe in Frameworks */,
+				1B1F5C4727DFA9EE002755D3 /* AnyFormatKit in Frameworks */,
 				1B1F5C3E27DF9005002755D3 /* StripeApplePay in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -62,6 +70,9 @@
 				1B1F5C3027DF8EAD002755D3 /* Assets.xcassets */,
 				1B1F5C3227DF8EAD002755D3 /* Preview Content */,
 				1B1F5C3F27DF9498002755D3 /* Constants.swift */,
+				1B1F5C4127DFA2F8002755D3 /* CustomStyledTextField.swift */,
+				1B1F5C4327DFA59B002755D3 /* CustomStyledButton.swift */,
+				1B1F5C4827DFAA0C002755D3 /* TextFormatter.swift */,
 			);
 			path = "Stripe-Subscriptions-CustomUI";
 			sourceTree = "<group>";
@@ -93,6 +104,7 @@
 			packageProductDependencies = (
 				1B1F5C3B27DF9005002755D3 /* Stripe */,
 				1B1F5C3D27DF9005002755D3 /* StripeApplePay */,
+				1B1F5C4627DFA9EE002755D3 /* AnyFormatKit */,
 			);
 			productName = "Stripe-Subscriptions-CustomUI";
 			productReference = 1B1F5C2927DF8EAB002755D3 /* Stripe-Subscriptions-CustomUI.app */;
@@ -124,6 +136,7 @@
 			mainGroup = 1B1F5C2027DF8EAB002755D3;
 			packageReferences = (
 				1B1F5C3A27DF9005002755D3 /* XCRemoteSwiftPackageReference "stripe-ios" */,
+				1B1F5C4527DFA9EE002755D3 /* XCRemoteSwiftPackageReference "AnyFormatKit" */,
 			);
 			productRefGroup = 1B1F5C2A27DF8EAB002755D3 /* Products */;
 			projectDirPath = "";
@@ -152,8 +165,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B1F5C2F27DF8EAB002755D3 /* ContentView.swift in Sources */,
+				1B1F5C4427DFA59B002755D3 /* CustomStyledButton.swift in Sources */,
 				1B1F5C2D27DF8EAB002755D3 /* Stripe_Subscriptions_CustomUIApp.swift in Sources */,
+				1B1F5C4927DFAA0C002755D3 /* TextFormatter.swift in Sources */,
 				1B1F5C4027DF9498002755D3 /* Constants.swift in Sources */,
+				1B1F5C4227DFA2F8002755D3 /* CustomStyledTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,6 +382,14 @@
 				minimumVersion = 21.0.0;
 			};
 		};
+		1B1F5C4527DFA9EE002755D3 /* XCRemoteSwiftPackageReference "AnyFormatKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/luximetr/AnyFormatKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -378,6 +402,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 1B1F5C3A27DF9005002755D3 /* XCRemoteSwiftPackageReference "stripe-ios" */;
 			productName = StripeApplePay;
+		};
+		1B1F5C4627DFA9EE002755D3 /* AnyFormatKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1B1F5C4527DFA9EE002755D3 /* XCRemoteSwiftPackageReference "AnyFormatKit" */;
+			productName = AnyFormatKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
