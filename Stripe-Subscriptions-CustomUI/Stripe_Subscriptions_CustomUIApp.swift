@@ -6,9 +6,15 @@
 //
 
 import SwiftUI
+import StripeCore
 
 @main
 struct Stripe_Subscriptions_CustomUIApp: App {
+
+    init() {
+        StripeAPI.defaultPublishableKey = Constants.stripePublishableKey
+    }
+
     var body: some Scene {
         WindowGroup {
             ContentView()
