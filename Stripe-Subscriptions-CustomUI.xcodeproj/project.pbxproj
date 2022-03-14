@@ -11,6 +11,8 @@
 		1B1F5C2F27DF8EAB002755D3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1F5C2E27DF8EAB002755D3 /* ContentView.swift */; };
 		1B1F5C3127DF8EAD002755D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B1F5C3027DF8EAD002755D3 /* Assets.xcassets */; };
 		1B1F5C3427DF8EAD002755D3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B1F5C3327DF8EAD002755D3 /* Preview Assets.xcassets */; };
+		1B1F5C3C27DF9005002755D3 /* Stripe in Frameworks */ = {isa = PBXBuildFile; productRef = 1B1F5C3B27DF9005002755D3 /* Stripe */; };
+		1B1F5C3E27DF9005002755D3 /* StripeApplePay in Frameworks */ = {isa = PBXBuildFile; productRef = 1B1F5C3D27DF9005002755D3 /* StripeApplePay */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B1F5C3C27DF9005002755D3 /* Stripe in Frameworks */,
+				1B1F5C3E27DF9005002755D3 /* StripeApplePay in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +87,10 @@
 			dependencies = (
 			);
 			name = "Stripe-Subscriptions-CustomUI";
+			packageProductDependencies = (
+				1B1F5C3B27DF9005002755D3 /* Stripe */,
+				1B1F5C3D27DF9005002755D3 /* StripeApplePay */,
+			);
 			productName = "Stripe-Subscriptions-CustomUI";
 			productReference = 1B1F5C2927DF8EAB002755D3 /* Stripe-Subscriptions-CustomUI.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = 1B1F5C2027DF8EAB002755D3;
+			packageReferences = (
+				1B1F5C3A27DF9005002755D3 /* XCRemoteSwiftPackageReference "stripe-ios" */,
+			);
 			productRefGroup = 1B1F5C2A27DF8EAB002755D3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -341,6 +352,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1B1F5C3A27DF9005002755D3 /* XCRemoteSwiftPackageReference "stripe-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stripe/stripe-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 21.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1B1F5C3B27DF9005002755D3 /* Stripe */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1B1F5C3A27DF9005002755D3 /* XCRemoteSwiftPackageReference "stripe-ios" */;
+			productName = Stripe;
+		};
+		1B1F5C3D27DF9005002755D3 /* StripeApplePay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1B1F5C3A27DF9005002755D3 /* XCRemoteSwiftPackageReference "stripe-ios" */;
+			productName = StripeApplePay;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1B1F5C2127DF8EAB002755D3 /* Project object */;
 }
