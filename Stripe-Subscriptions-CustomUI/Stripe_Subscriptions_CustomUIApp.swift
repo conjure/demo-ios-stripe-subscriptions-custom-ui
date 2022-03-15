@@ -17,7 +17,7 @@ struct Stripe_Subscriptions_CustomUIApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CheckoutView()
         }
     }
 }

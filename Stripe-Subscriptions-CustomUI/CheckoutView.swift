@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  CheckoutView.swift
 //  Stripe-Subscriptions-CustomUI
 //
 //  Created by Dinesh Vijaykumar on 14/03/2022.
@@ -7,13 +7,12 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct CheckoutView: View {
     @State private var cardNumber: String = ""
     @State private var cardExpiry: String = ""
     @State private var cardCVC: String = ""
 
-    @State private var country: String = ""
-    @State private var postcode: String = ""
+    @StateObject var viewModel = CheckoutViewModel()
 
     var body: some View {
         NavigationView {
@@ -42,22 +41,22 @@ struct ContentView: View {
                         }
                 }
 
-                Text("Country or region")
-                    .bold()
-                    .padding(.top, 15)
+                if viewModel.state == .loading {
+                    ProgressView()
+                        .progressViewStyle(CircularProgressViewStyle(tint: .gray))
+                        .scaleEffect(1.5)
+                }
 
-                CustomStyledTextField(
-                    text: $country, placeholder: "Country", symbolName: "map", keyboardType: .asciiCapable
-                )
+                NavigationLink(isActive: $viewModel.showDetail) {
+                    ConfirmationView()
+                } label: {
+                    EmptyView()
+                }
 
-                CustomStyledTextField(
-                    text: $postcode, placeholder: "Postcode", symbolName: "house", keyboardType: .asciiCapable
-                )
+                Spacer()
 
                 CustomStyledButton(title: "Pay £9.99 a month", action: submitPayment)
                     .disabled(shouldDisableButton)
-
-                Spacer()
             }
             .padding()
             .navigationBarTitle("Stripe Subscriptions")
@@ -65,16 +64,16 @@ struct ContentView: View {
     }
 
     private func submitPayment() {
-
+        self.viewModel.createPaymentMethod(cardNumber: cardNumber, expDate: cardExpiry, cvv: cardCVC)
     }
 
     private var shouldDisableButton: Bool {
-        cardNumber.isEmpty || cardCVC.isEmpty || cardExpiry.isEmpty || postcode.isEmpty || country.isEmpty
+        cardNumber.isEmpty || cardCVC.isEmpty || cardExpiry.isEmpty || viewModel.state == .loading
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        CheckoutView()
     }
 }
