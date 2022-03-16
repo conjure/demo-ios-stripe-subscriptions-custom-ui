@@ -13,4 +13,5 @@ struct Constants {
     static let stripePublishableKey = "ENTER_STRIPE_PUBLISHABLE_API_KEY"
     static let backendUrl = "ENTER_BACKEND_URL"
     static let priceID = "ENTER_STRIPE_PRICE_ID"
+    static let merchantID = "ENTER_APPLE_MERCHANT_ID"
 }

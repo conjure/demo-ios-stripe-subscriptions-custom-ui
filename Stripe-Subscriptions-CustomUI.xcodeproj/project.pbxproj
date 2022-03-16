@@ -18,6 +18,7 @@
 		1B1F5C4427DFA59B002755D3 /* CustomStyledButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1F5C4327DFA59B002755D3 /* CustomStyledButton.swift */; };
 		1B1F5C4727DFA9EE002755D3 /* AnyFormatKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1B1F5C4627DFA9EE002755D3 /* AnyFormatKit */; };
 		1B1F5C4927DFAA0C002755D3 /* TextFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1F5C4827DFAA0C002755D3 /* TextFormatter.swift */; };
+		1B32699A27E253B4000B35F2 /* CheckoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B32699927E253B4000B35F2 /* CheckoutViewController.swift */; };
 		1BCFFE8127E0991200D4F196 /* CheckoutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCFFE8027E0991200D4F196 /* CheckoutViewModel.swift */; };
 		1BCFFE8327E0AE7E00D4F196 /* ConfirmationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCFFE8227E0AE7E00D4F196 /* ConfirmationView.swift */; };
 /* End PBXBuildFile section */
@@ -32,6 +33,7 @@
 		1B1F5C4127DFA2F8002755D3 /* CustomStyledTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomStyledTextField.swift; sourceTree = "<group>"; };
 		1B1F5C4327DFA59B002755D3 /* CustomStyledButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomStyledButton.swift; sourceTree = "<group>"; };
 		1B1F5C4827DFAA0C002755D3 /* TextFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFormatter.swift; sourceTree = "<group>"; };
+		1B32699927E253B4000B35F2 /* CheckoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutViewController.swift; sourceTree = "<group>"; };
 		1BCFFE8027E0991200D4F196 /* CheckoutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutViewModel.swift; sourceTree = "<group>"; };
 		1BCFFE8227E0AE7E00D4F196 /* ConfirmationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -79,6 +81,7 @@
 				1B1F5C4827DFAA0C002755D3 /* TextFormatter.swift */,
 				1BCFFE8027E0991200D4F196 /* CheckoutViewModel.swift */,
 				1BCFFE8227E0AE7E00D4F196 /* ConfirmationView.swift */,
+				1B32699927E253B4000B35F2 /* CheckoutViewController.swift */,
 			);
 			path = "Stripe-Subscriptions-CustomUI";
 			sourceTree = "<group>";
@@ -177,6 +180,7 @@
 				1B1F5C4927DFAA0C002755D3 /* TextFormatter.swift in Sources */,
 				1BCFFE8327E0AE7E00D4F196 /* ConfirmationView.swift in Sources */,
 				1B1F5C4027DF9498002755D3 /* Constants.swift in Sources */,
+				1B32699A27E253B4000B35F2 /* CheckoutViewController.swift in Sources */,
 				1B1F5C4227DFA2F8002755D3 /* CustomStyledTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
