@@ -42,9 +42,14 @@ struct CheckoutView: View {
                 }
 
                 if viewModel.state == .loading {
-                    ProgressView()
-                        .progressViewStyle(CircularProgressViewStyle(tint: .gray))
-                        .scaleEffect(1.5)
+                    HStack {
+                        Spacer()
+                        ProgressView()
+                            .progressViewStyle(CircularProgressViewStyle(tint: .gray))
+                            .scaleEffect(1.5)
+                            .padding(.top, 200)
+                        Spacer()
+                    }
                 }
 
                 NavigationLink(isActive: $viewModel.showDetail) {
