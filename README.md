@@ -1,5 +1,5 @@
 # Stripe Subscriptions with iOS using a custom UI
-This example app demonstrates how to integrate Stripe subscriptions using a custom UI
+This example app demonstrates how to integrate Stripe subscriptions using a custom UI as explained [here](https://insight.conjure.co.uk/subscriptions-with-stripe-using-a-custom-ui-2f6d11476426)
 
 ## Requirements
 - Create an account with [Stripe](https://dashboard.stripe.com/register)
